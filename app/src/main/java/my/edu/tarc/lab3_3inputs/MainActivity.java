@@ -45,6 +45,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
+    public void Reset(View view){
+        spinnerAge.setSelection(0);
+        radioGroupGender.clearCheck();
+        textViewPremium.setText("Premium");
+        checkBoxSmoker.setChecked(false);
+    }
+
     public void calculatePremium(View view){
         int position;
         double premium = 0;
